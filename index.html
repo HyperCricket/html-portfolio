@@ -1,37 +1,72 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
-
 <!DOCTYPE html>
-<html lang = "en" dir = "ltr">
+<html lang="en" dir="ltr">
+
 <head>
     <meta charset="utf-8">
-    <title>KevinNguyen.com</title>
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <nav>
+        <h1>KEVIN NGUYEN</h1>
+        <ul class="navigation">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Me!</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class = "bars" name = "menu-outline"></ion-icon>
+        </button>
+    </nav>
 </head>
 
 <body>
-<h1>Welcome to Kevin's portfolio</h1>
-<h2>Aspiring web developer and coding enthusiast</h2> 
-<h3><a href="public/movie-ranking.html">Movie ranking project</a></h3>
-<img src="assets/images/movie-ranking.png" alt="Movie ranking list">
-<hr>
-<h3><a href="public/birthday-invite.html">Birthday invite project</a></h3>
-<img src="assets/images/birthday-invite.png" alt="Birthday invite project" height="600">
-<a href="public/about.html">About me</a>
-<a href="public/contact.html">Contact me</a>  
-</body>
+    <section class = "hidden">
+        <h1>My Resume</h1>
+        <h2>Introduction</h2>
+        <p>I am a high school student eager to learn and get experience in computer science.</p>
+        <img src="WIN_20230809_20_30_37_Pro.jpg" alt="a pic of me" height="200">
+    </section>
+    <hr>
 
+    <section class = "hidden">
+        <h2>Skills</h2>
+        <ul>
+            <li>Problem Solving</li>
+            <li>Communication</li>
+            <li>Persistence and Determination</li>
+            <li>Have experience coding in C++, Java and a little bit of HTML, CSS, and JavaScript</li>
+        </ul>
+    </section>
+    <hr>
+
+    <section class = "hidden">
+        <h2>Education</h2>
+        <p>Currently attending Cy-Fair high school and graduating with an associate
+            degree of science and high school diploma in the summa cum laude class.</p>
+        <hr>
+        <h2>Work Experience</h2>
+        <ul>
+            <li>Worked at AM cleaners family business during the summer for 3 years.</li>
+        </ul>
+    </section>
+    <hr>
+
+    <section class = "hidden">
+        <h2>Achievements</h2>
+        <ul>
+            <li>I have a 1127+ day streak on Duolingo, learning Spanish and Vietnamese.</li>
+            <li>Have hours of modules and challenge problems done for many types of computer
+                science websites.
+            </li>
+            <li>I currently have a 6.71 GPA weighted out of 6 in high school.</li>
+        </ul>
+    </section>
+    <hr>
     
+    <footer class = "hidden">
+        <p>© 2023 Kevin Nguyen. All Rights Reserved.</p>
+        <button onclick="toTop()">Back to Top</button>
+    </footer>
+</body>
+<script src="app.js"></script>
 </html>
