@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang = "en" dir = "ltr">
     <head>
@@ -20,15 +19,77 @@
     </head>
 
     <body>
-        <h1>Contact Me!</h1>
-        <h2>You can contact me on:</h2>
-        <h3>Discord: hypercricket</h3>
-        <h3>Phone number: 832-878-9402</h3>
-        <h3>Mail: 77065</h3>
+        <div class="container">
+            <h1>Contact Me!</h1>
+            <p>I would love to get your feedback and communicate with you.
+                Please feel free to message me.
+            </p>
+            <div class="contact-box">
+                <div class = "contact-left">
+                    <h3>Send your request</h3>
+                    <form>
+
+                        <div class = "input-row">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="John Doe">
+                            </div>
+                            <div class="input-group">
+                                <label>Phone</label>
+                                <input type="text" placeholder="012-345-6789">
+                            </div>
+
+                        </div>
+
+                        <div class = "input-row">
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="text" placeholder="johndoe@gmail.com">
+                            </div>
+                            <div class="input-group">
+                                <label>Subject</label>
+                                <input type="text" placeholder="Subject line">
+                            </div>
+
+                        </div>
+
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Your Message"></textarea>
+
+                        <button type = "submit">SEND</button>
+                        <!-- <form method="post">
+                            <input type="button" value="Send Email"
+                                   onclick="sendEmail()" />
+                        </form> -->
+                    </form>
+                </div>
+
+                <div class = "contact-right">
+                    <h3>Reach Me</h3>
+
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>KevinNguyen4221@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>832-878-9402</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>10711 Allens Landing Dr</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
     </body>
     <footer>
-        <p>© 2023 Kevin Nguyen. All Rights Reserved.</p>
+        <p>© 2024 Kevin Nguyen. All Rights Reserved.</p>
     </footer>
-
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>src="app.js"</script>
+    
 </html>

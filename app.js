@@ -25,3 +25,45 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+function sendEmail() {
+    Email.send({
+        Host: "smtp.gmail.com",
+        Username: "sender@email_address.com",
+        Password: "Enter your password",
+        To: 'receiver@email_address.com',
+        From: "sender@email_address.com",
+        Subject: "Sending Email using javascript",
+        Body: "Well that was easy!!",
+        Attachments: [
+            {
+                name: "File_Name_with_Extension",
+                path: "Full Path of the file"
+            }]
+    })
+        .then(function (message) {
+            alert("Mail has been sent successfully")
+        });
+}
+
+// http://ahrengot.com/tutorials/greensock-javascript-animation
+
+var $cursor = $('.cursor');
+
+function moveCursor(e) {
+  $cursor.addClass('is-moving');
+  
+  TweenLite.to($cursor, 0.23, {
+    left: e.pageX,
+    top: e.pageY,
+    ease: Power4.easOut
+  });
+  
+  clearTimeout(timer);
+
+   var timer = setTimeout(function() {
+       $cursor.removeClass('is-moving');
+   }, 300);
+}
+
+$(window).on('mousemove', moveCursor);
